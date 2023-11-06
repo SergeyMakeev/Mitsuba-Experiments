@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+
+	Automatically converted from Wavefront OBJ
+
+-->
+
+<scene version="0.5.0">
+	<integrator type="direct"/>
+
+	<bsdf type="diffuse" id="initialShadingGroup_material">
+		<rgb name="reflectance" value="0.214041 0.214041 0.214041"/>
+	</bsdf>
+
+	<shape type="serialized" id="pPlane1_mesh">
+		<string name="filename" value="mesh.serialized"/>
+		<integer name="shapeIndex" value="0"/>
+
+		<bsdf type="diffuse"/>
+	</shape>
+
+	<sensor type="perspective">
+		<float name="farClip" value="12.4142"/>
+		<float name="focusDistance" value="3.46097"/>
+		<float name="fov" value="45"/>
+		<string name="fovAxis" value="x"/>
+		<float name="nearClip" value="0.0241421"/>
+		<transform name="toWorld">
+
+			<lookat target="0.0, 0.0, 0.460743" origin="0.0, 0.0, 1.46065" up="0.0, 1.0, 0.0"/>
+		</transform>
+
+		<sampler type="independent">
+			<integer name="sampleCount" value="4"/>
+		</sampler>
+
+		<film type="hdrfilm">
+			<rfilter type="gaussian"/>
+		</film>
+	</sensor>
+</scene>
